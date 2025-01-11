@@ -104,4 +104,65 @@ int main() {
 
     return 0;
 }
+/*
+#include<stdio.h>
+#define n 10
 
+float arr[n];
+int front, rear;
+
+void appendQ(float x){
+
+    if(front==-1 && rear == -1){
+        front = rear =0;
+        arr[rear]=x;
+    }
+    else if(rear==n-1){
+        printf("Overflow");
+    }
+    else{
+        rear++;
+        arr[rear]=x;
+    }
+
+}
+
+void bubble(){
+
+    for(int i=0; i<n-1; i++){
+        for(int j=0; j<n-1-i; j++){
+            if(arr[j]>arr[j+1]){
+                float temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+
+    for(int a=0; a<n; a++){
+        float L[n];
+        L[a]=arr[a];
+
+        printf("%f ,",L[a]);
+    }
+
+}
+
+
+void main(){
+
+    float x;
+    do{
+        printf("Enter the values: ");
+        scanf("%f",&x);
+        appendQ(x);
+
+
+    }
+    while(x!=0);
+
+    bubble();
+
+
+}
+*/
